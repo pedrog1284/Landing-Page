@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Paula Garcia | Cirurgiã-Dentista em Campinas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#FBF7EE',
+                            100: '#F5ECDA',
+                            300: '#DFCDA5',
+                            500: '#C5A059',
+                            600: '#A6823F',
+                            700: '#87672F',
+                        },
+                        champagne: '#FAF9F6',
+                        dark: '#1A1A1A',
+                        whatsapp: '#25D366'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient {
+            background: linear-gradient(135deg, #C5A059 0%, #E2C98F 50%, #A6823F 100%);
+        }
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #C5A059 0%, #A6823F 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-champagne text-dark font-sans antialiased selection:bg-gold-500 selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gold-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-full border border-gold-500 flex items-center justify-center bg-gold-50 overflow-hidden shadow-inner">
+                    <img src="./logo.jpeg" alt="Logo" class="w-full h-full object-contain">
+                </div>
+                <div>
+                    <span class="block font-serif text-lg font-bold tracking-wide text-dark">Dra. Paula Garcia</span>
+                    <span class="block text-xs font-medium text-gold-600 uppercase tracking-widest">CRO-SP 176227</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-gray-700">
+                <a href="#tratamentos" class="hover:text-gold-600 transition-colors">Tratamentos & Resultados</a>
+                <a href="#contato" class="hover:text-gold-600 transition-colors">Contato</a>
+                <a href="#faq" class="hover:text-gold-600 transition-colors">FAQ</a>
+            </nav>
+
+            <div class="hidden sm:block">
+                <a href="https://wa.me/5519989495979?text=Olá!%20Vi%20o%20site%20da%20Dra.%20Paula%20Garcia%20e%20gostaria%20de%20agendar%20uma%20avaliação." target="_blank" class="inline-flex items-center gap-2 bg-whatsapp hover:bg-emerald-600 text-white px-5 py-2.5 rounded-full font-medium text-sm shadow-md transition-all transform hover:scale-105">
+                    <i class="fab fa-whatsapp text-lg"></i>
+                    <span>Agendar Avaliação</span>
+                </a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-dark text-2xl focus:outline-none p-2">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gold-100 px-6 py-4 space-y-3 font-medium text-gray-700 shadow-lg">
+            <a href="#tratamentos" class="block hover:text-gold-600 py-1">Tratamentos & Resultados</a>
+            <a href="#contato" class="block hover:text-gold-600 py-1">Contato</a>
+            <a href="#faq" class="block hover:text-gold-600 py-1">FAQ</a>
+            <div class="pt-2">
+                <a href="https://wa.me/5519989495979?text=Olá!%20Vi%20o%20site%20da%20Dra.%20Paula%20Garcia%20e%20gostaria%20de%20agendar%20uma%20avaliação." target="_blank" class="flex items-center justify-center gap-2 bg-whatsapp text-white px-5 py-3 rounded-full font-medium text-sm shadow-md w-full">
+                    <i class="fab fa-whatsapp text-lg"></i>
+                    <span>Agendar Avaliação</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative overflow-hidden py-20 lg:py-32 bg-gradient-to-b from-white to-gold-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-gold-100 text-gold-700 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase">
+                        <i class="fas fa-star text-gold-500"></i> 18 Anos de Experiência em Campinas
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-dark leading-tight">
+                        Transforme seu Sorriso com <span class="text-gold-gradient">Conforto Absoluto</span> e Naturalidade
+                    </h1>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0">
+                        Especializada em clareamento dental avançado, toxina botulínica (botox), restaurações estéticas e limpezas profundas. Atendimento humanizado, sem pressa e com técnicas de anestesia sem dor.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="https://wa.me/5519989495979?text=Olá!%20Vi%20o%20site%20da%20Dra.%20Paula%20Garcia%20e%20gostaria%20de%20agendar%20uma%20avaliação." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-whatsapp hover:bg-emerald-600 text-white px-8 py-4 rounded-full font-semibold text-base shadow-lg transition-all transform hover:-translate-y-0.5">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                            <span>Agendar Avaliação sem Dor</span>
+                        </a>
+                        <a href="#tratamentos" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-dark border border-gold-300 px-8 py-4 rounded-full font-semibold text-base shadow-sm transition-all">
+                            <span>Conhecer Tratamentos</span>
+                            <i class="fas fa-arrow-down text-xs text-gold-600"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-gold-500 to-gold-300 opacity-30 blur-lg"></div>
+                        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white">
+                            <img src="./foto1.jpg" alt="Dra. Paula Garcia" class="w-full h-[450px] object-cover object-top">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 text-white">
+                                <p class="font-serif text-xl font-bold">Dra. Paula Garcia</p>
+                                <p class="text-xs text-gold-300 tracking-wider">Cirurgiã-Dentista • CRO-SP 176227</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tratamentos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-gold-600 font-semibold uppercase tracking-widest text-xs">Excelência em cada detalhe & Resultados Reais</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-dark">Nossos Tratamentos e Transformações</h2>
+                <p class="text-gray-600">Procedimentos modernos focados na estética do seu sorriso e bem-estar geral, executados com cuidado e precisão. Veja o antes e depois de procedimentos realizados com técnica refinada e máxima naturalidade.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div class="bg-champagne rounded-2xl overflow-hidden shadow-md border border-gold-100 flex flex-col group hover:shadow-lg transition-all">
+                    <div class="bg-white border-b border-gold-50 flex items-center justify-center relative">
+                        <img src="./AntesDepoisClareamento3.jpg" alt="Antes e Depois Clareamento" class="w-full h-auto block">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <span class="text-xs font-semibold text-gold-600 uppercase tracking-widest mb-1">Clareamento Dental</span>
+                        <h3 class="font-serif text-lg font-bold text-dark mb-2">Dentes mais brancos e luminosos</h3>
+                        <p class="text-gray-600 text-sm flex-1">Opções a laser no consultório ou kit caseiro com moldeira personalizada para você clarear com segurança e conforto em casa. Associação perfeita para resultados naturais.</p>
+                        <a href="https://wa.me/5519989495979?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Clareamento%20Dental." target="_blank" class="mt-4 inline-flex items-center gap-2 text-gold-700 font-semibold text-sm hover:text-dark transition-colors">
+                            <span>Saiba mais</span>
+                            <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-champagne rounded-2xl overflow-hidden shadow-md border border-gold-100 flex flex-col group hover:shadow-lg transition-all">
+                    <div class="bg-white border-b border-gold-50 flex items-center justify-center relative">
+                        <img src="./AntesDepoisBotox1.jpg" alt="Antes e Depois Botox" class="w-full h-auto block">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <span class="text-xs font-semibold text-gold-600 uppercase tracking-widest mb-1">Botox e Rejuvenescimento</span>
+                        <h3 class="font-serif text-lg font-bold text-dark mb-2">Suavização de Rugas de Expressão</h3>
+                        <p class="text-gray-600 text-sm flex-1">Aplicação de toxina botulínica no terço superior para prevenção de rugas, suavização de expressões e harmonização facial mantendo a naturalidade e jovialidade.</p>
+                        <a href="https://wa.me/5519989495979?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20Botox." target="_blank" class="mt-4 inline-flex items-center gap-2 text-gold-700 font-semibold text-sm hover:text-dark transition-colors">
+                            <span>Saiba mais</span>
+                            <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-champagne rounded-2xl overflow-hidden shadow-md border border-gold-100 flex flex-col group hover:shadow-lg transition-all">
+                    <div class="bg-white border-b border-gold-50 flex items-center justify-center relative">
+                        <img src="./AntesDepoisRestauracao1.jpg" alt="Antes e Depois Restauração" class="w-full h-auto block">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <span class="text-xs font-semibold text-gold-600 uppercase tracking-widest mb-1">Restaurações Estéticas</span>
+                        <h3 class="font-serif text-lg font-bold text-dark mb-2">Correção e Anatomia Perfeita</h3>
+                        <p class="text-gray-600 text-sm flex-1">Técnicas avançadas com resinas de alta tecnologia e escultura individualizada para devolver a forma e a cor natural aos seus dentes sem marcas visíveis.</p>
+                        <a href="https://wa.me/5519989495979?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20Restaurações%20Estéticas." target="_blank" class="mt-4 inline-flex items-center gap-2 text-gold-700 font-semibold text-sm hover:text-dark transition-colors">
+                            <span>Saiba mais</span>
+                            <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-champagne rounded-2xl overflow-hidden shadow-md border border-gold-100 flex flex-col group hover:shadow-lg transition-all">
+                    <div class="bg-white border-b border-gold-50 flex items-center justify-center relative">
+                        <img src="./foto2.png" alt="Limpeza e Profilaxia" class="w-full h-auto block">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <span class="text-xs font-semibold text-gold-600 uppercase tracking-widest mb-1">Limpeza e Profilaxia</span>
+                        <h3 class="font-serif text-lg font-bold text-dark mb-2">Prevenção e Saúde Bucal</h3>
+                        <p class="text-gray-600 text-sm flex-1">Remoção completa de tártaro e placa bacteriana com aparelhos modernos, prevenindo gengivites, cáries e garantindo hálito fresco.</p>
+                        <a href="https://wa.me/5519989495979?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20Limpeza%20e%20Profilaxia." target="_blank" class="mt-4 inline-flex items-center gap-2 text-gold-700 font-semibold text-sm hover:text-dark transition-colors">
+                            <span>Saiba mais</span>
+                            <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+                <a href="https://wa.me/5519989495979?text=Olá!%20Vi%20os%20casos%20de%20antes%20e%20depois%20e%20gostaria%20de%20uma%20avaliação%20para%20o%20meu%20caso." target="_blank" class="inline-flex items-center gap-2 bg-dark hover:bg-gold-600 text-white px-8 py-3.5 rounded-full font-medium text-sm transition-colors shadow-md">
+                    <i class="fab fa-whatsapp text-lg"></i>
+                    <span>Quero transformar meu sorriso</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-20 bg-champagne border-t border-gold-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-gold-600 font-semibold uppercase tracking-widest text-xs">Venha nos visitar</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-dark">Localização e Contato</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Agende sua avaliação e dê o primeiro passo para o sorriso que você sempre quis com quem realmente entende de cuidado e estética.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-gold-500 text-white flex items-center justify-center flex-shrink-0 text-xl">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Endereço do Consultório</h4>
+                                <p class="text-gray-600 text-sm mt-1">One Clinic, Av. José Bonifácio, 2407<br>Jardim das Palmeiras, Campinas - SP, 13092-305</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-whatsapp text-white flex items-center justify-center flex-shrink-0 text-xl">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">WhatsApp Oficial</h4>
+                                <p class="text-gray-600 text-sm mt-1">(19) 98949-5979</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-gold-500 text-white flex items-center justify-center flex-shrink-0 text-xl">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Instagram</h4>
+                                <p class="text-gray-600 text-sm mt-1"><a href="https://instagram.com/dra.paulagarciia" target="_blank" class="hover:text-gold-600 transition-colors">@dra.paulagarciia</a></p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-gold-500 text-white flex items-center justify-center flex-shrink-0 text-xl">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">E-mail</h4>
+                                <p class="text-gray-600 text-sm mt-1">drapaulagarciia@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="https://wa.me/5519989495979?text=Olá!%20Vi%20o%20site%20da%20Dra.%20Paula%20Garcia%20e%20gostaria%20de%20agendar%20uma%20avaliação." target="_blank" class="inline-flex items-center gap-3 bg-whatsapp hover:bg-emerald-600 text-white px-8 py-4 rounded-full font-semibold text-base shadow-lg transition-all">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                            <span>Chamar no WhatsApp Agora</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="bg-white rounded-3xl p-4 shadow-xl border border-gold-200 overflow-hidden">
+                        <div class="relative rounded-2xl overflow-hidden h-[400px] bg-gray-100 flex items-center justify-center border border-gold-100">
+                            <div class="absolute inset-0 bg-gradient-to-tr from-gold-100/50 to-white flex flex-col items-center justify-center p-6 text-center">
+                                <div class="w-16 h-16 rounded-full bg-gold-500 text-white flex items-center justify-center text-3xl mb-4 shadow-lg animate-bounce">
+                                    <i class="fas fa-map-pin"></i>
+                                </div>
+                                <h3 class="font-serif text-xl font-bold text-dark">One Clinic</h3>
+                                <p class="text-gray-600 text-sm mt-2 max-w-xs">Av. José Bonifácio, 2407 - Jardim das Palmeiras, Campinas - SP</p>
+                                <a href="https://maps.google.com/?q=Av.+José+Bonifácio,+2407+-+Jardim+das+Palmeiras,+Campinas+-+SP" target="_blank" class="mt-6 inline-block bg-dark text-white text-xs font-semibold px-5 py-2.5 rounded-full hover:bg-gold-600 transition-colors">
+                                    Abrir no Google Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 space-y-4">
+                <span class="text-gold-600 font-semibold uppercase tracking-widest text-xs">Tire suas dúvidas</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-dark">Perguntas Frequentes</h2>
+                <p class="text-gray-600">Esclarecemos as principais dúvidas antes da sua visita ao consultório.</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="border border-gold-200 rounded-2xl overflow-hidden bg-champagne">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left font-serif font-bold text-dark hover:text-gold-600 transition-colors">
+                        <span>Dra. Paula atende convênio odontológico?</span>
+                        <i class="fas fa-chevron-down text-gold-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed">
+                        Não trabalhamos com convênios. Oferecemos um atendimento particular de excelência, sem pressa, focado na alta qualidade dos materiais, segurança e em resultados duradouros para a sua saúde e estética.
+                    </div>
+                </div>
+
+                <div class="border border-gold-200 rounded-2xl overflow-hidden bg-champagne">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left font-serif font-bold text-dark hover:text-gold-600 transition-colors">
+                        <span>Como funciona a elaboração do orçamento?</span>
+                        <i class="fas fa-chevron-down text-gold-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed">
+                        O valor exato de qualquer tratamento depende de uma avaliação clínica presencial personalizada. Cada sorriso é único e necessita de um diagnóstico preciso para indicar o melhor procedimento com segurança e eficácia.
+                    </div>
+                </div>
+
+                <div class="border border-gold-200 rounded-2xl overflow-hidden bg-champagne">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left font-serif font-bold text-dark hover:text-gold-600 transition-colors">
+                        <span>Onde fica localizado o consultório?</span>
+                        <i class="fas fa-chevron-down text-gold-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed">
+                        Atendemos na <strong>One Clinic</strong>, situada na Av. José Bonifácio, 2407 - Jardim das Palmeiras, Campinas - SP, CEP 13092-305. Um espaço moderno, confortável e de fácil acesso.
+                    </div>
+                </div>
+
+                <div class="border border-gold-200 rounded-2xl overflow-hidden bg-champagne">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left font-serif font-bold text-dark hover:text-gold-600 transition-colors">
+                        <span>Os procedimentos de clareamento ou botox causam dor?</span>
+                        <i class="fas fa-chevron-down text-gold-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed">
+                        Não! Utilizamos protocolos modernos e técnicas de anestesia sem dor quando necessário. O clareamento conta com produtos dessensibilizantes e o botox é aplicado com agulhas extremamente finas, garantindo o máximo conforto e tranquilidade para você.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-12 border-t border-gold-600/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+                <p class="font-serif text-xl font-bold text-gold-300">Dra. Paula Garcia</p>
+                <p class="text-xs text-gray-400 mt-1">Cirurgiã-Dentista • CRO-SP 176227</p>
+            </div>
+            <div class="text-xs text-gray-400">
+                <p>&copy; 2026 Dra. Paula Garcia. Todos os direitos reservados.</p>
+                <p class="mt-1">Atendimento em Campinas e região na One Clinic.</p>
+            </div>
+            <div class="flex items-center gap-4 text-xl">
+                <a href="https://instagram.com/dra.paulagarciia" target="_blank" class="w-10 h-10 rounded-full bg-white/10 hover:bg-gold-500 flex items-center justify-center transition-colors">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/5519989495979?text=Olá!%20Vi%20o%20site%20da%20Dra.%20Paula%20Garcia%20e%20gostaria%20de%20agendar%20uma%20avaliação." target="_blank" class="w-10 h-10 rounded-full bg-white/10 hover:bg-whatsapp flex items-center justify-center transition-colors">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5519989495979?text=Olá!%20Vi%20o%20site%20da%20Dra.%20Paula%20Garcia%20e%20gostaria%20de%20agendar%20uma%20avaliação." target="_blank" class="fixed bottom-6 right-6 z-50 bg-whatsapp text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition-transform animate-pulse" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+</body>
+
+</html>
+
